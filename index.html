@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/images-2.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Marck+Script&family=Roboto&display=swap" rel="stylesheet">
+    <title>NEW YEAR IS COMING</title>
+</head>
+<body>
+    <div class="time-count">
+        <h1 class="visually-hidden">Count Down Timer</h1>
+        <h2 class="time-count_title">До Нового Года осталось</h2>
+        <div class="time-count_content">
+            <div class="time-count_item time-count_days">
+                <div class="time-count_val">00</div>
+                <span class="time-count_text">дней</span>
+            </div>
+            <div class="time-count_separator">:</div>
+            <div class="time-count_item time-count_hours">
+                <div class="time-count_val">00</div>
+                <span class="time-count_text">часов</span>
+            </div>
+            <div class="time-count_separator">:</div>
+            <div class="time-count_item time-count_minutes">
+                <div class="time-count_val">00</div>
+                <span class="time-count_text">минут</span>
+            </div>
+            <div class="time-count_separator">:</div>
+            <div class="time-count_item time-count_seconds">
+                <div class="time-count_val">00</div>
+                <span class="time-count_text">секунд</span>
+            </div>
+        </div>
+
+        <audio class="audio">
+            <source src="./music/Let It Snow! Let It Snow! Let It Snow!.m4a" type = "audio/mpeg">
+        </audio>
+        <button hidden class="play" id="btn"></button>  
+        <label for="btn">
+        <img class="icon" src="images/images-2.png" alt="snowflake">
+        </label>
+    </div>    
+     <script src="script.js"></script>
+</body>
+</html>

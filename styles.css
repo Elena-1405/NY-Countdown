@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/Users/a1/HTML-Course/Self-Study/Count Down/images/NY1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Marck Script', serif;
+}
+
+.time-count_text {
+    font-size: 30px;  
+}
+
+.time-count_item{
+    text-align: center;
+}
+
+.time-count {
+    background: silve;
+    box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+    border-radius: 30px;
+    width: 600px;
+    height: 260px;
+    padding: 10px 10px;
+}
+
+.time-count_content {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.time-count_title {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.time-count_val {
+    font-size: 70px;
+    position: relative;
+    text-align: center;
+    min-width: 80px;
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+
+.time-count_separator{
+    font-size: 50px;
+    text-align: center;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding-top: 10px;  
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+  }
+
+  .audio {
+    width: 250px;
+    height: 17px;
+    box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.5);
+  }
+
+  .icon {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.5);
+    margin-top: 0;
+    
+  }
+
+  .icon:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+  
