@@ -4,7 +4,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../Count Down/images/NY1.jpg");
+    background-image: url("./Count Down/images/NY1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
