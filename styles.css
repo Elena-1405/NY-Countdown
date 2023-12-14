@@ -20,7 +20,6 @@ body {
 }
 
 .time-count {
-    background: silve;
     box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
     border-radius: 30px;
     width: 600px;
@@ -86,3 +85,63 @@ body {
     cursor: pointer;
   }
   
+@media screen and (max-width: 479px){
+    body {
+        margin: 0;
+        min-height: 111vh;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;   
+    }
+
+    .time-count_text {
+        font-size: 25px;  
+    }
+    .time-count {
+        box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+        border-radius: 30px;
+        width: 340px;
+        height: 300px;
+        padding: 8px 8px;
+    }
+    
+    .time-count_content {
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .time-count_title {
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 18px;
+        margin-top: 30px;
+    }
+    
+    .time-count_val {
+        font-size: 50px;
+        position: relative;
+        text-align: center;
+        min-width: 50px;
+        margin-left: 8px;
+        margin-right: 8px; 
+    }
+    
+    .time-count_separator{
+        font-size: 30px;
+        text-align: center;
+        margin-left: 6px;
+        margin-right: 6px;
+        padding-top: 8px;  
+    }
+    
+      .icon {
+        width: 35px;
+        height: 35px; 
+      }
+}
