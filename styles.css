@@ -145,3 +145,63 @@ body {
         height: 35px; 
       }
 }
+
+@media screen and (max-width: 670px){
+    body {
+        margin: 0;
+        min-height: 100vh;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;   
+    }
+
+    .time-count_text {
+        font-size: 27px;  
+    }
+    .time-count {
+        box-shadow: 4px 8px 40px rgba(8, 24, 111, 0.2);
+        border-radius: 30px;
+        width: 370px;
+        height: 320px;
+        padding: 8px 8px;
+    }
+    
+    .time-count_content {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .time-count_title {
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 18px;
+        margin-top: 25px;
+    }
+    
+    .time-count_val {
+        font-size: 55px;
+        position: relative;
+        text-align: center;
+        min-width: 50px;
+        margin-left: 8px;
+        margin-right: 8px; 
+    }
+    
+    .time-count_separator{
+        font-size: 35px;
+        text-align: center;
+        margin-left: 6px;
+        margin-right: 6px;
+        padding-top: 8px;  
+    }
+    
+      .icon {
+        width: 40px;
+        height: 40px; 
+      }
+}
