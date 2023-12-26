@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () =>  {
     const newYear = new Date('jan 1 2024 00:00:00');
    
+    const timeCountElem = document.querySelector('.time-count');
+    const newYearElem = document.querySelector('.new-year');
     const daysVal = document.querySelector('.time-count_days .time-count_val');
     const hoursVal = document.querySelector('.time-count_hours .time-count_val');
     const minutesVal = document.querySelector('.time-count_minutes .time-count_val');
@@ -34,10 +36,17 @@ const timeCount = () => {
     hoursText.textContent = declOfNum(hours, ['час', 'часа', 'часов']);
     minutesText.textContent = declOfNum(minutes, ['минута', 'минуты', 'минут']);
     secondsText.textContent = declOfNum(seconds, ['секунда', 'секунды', 'секунд']);
-};
-    
-    timeCount()
+
+    if(leftUntil < 0){
+      clearInterval(setInterval(timeCount, 1000));
+      timeCountElem.style.display = 'none'; 
+      newYearElem.style.fontSize = '100px'
+
+    }
+}; 
+    timeCount()  
     setInterval(timeCount, 1000);
+ 
 });
 
 // конечная дата 28.01.22 12.00
