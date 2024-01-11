@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () =>  {
-    const newYear = new Date('jan 1 2024 00:00:00');
+    const newYear = new Date('jan 1 2025 00:00:00');
    
     const timeCountElem = document.querySelector('.time-count');
     const newYearElem = document.querySelector('.new-year');
